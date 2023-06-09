@@ -1,0 +1,405 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/*Botones fijos en toda la página Web*/
+
+.btn-wsp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+}
+.arrow-circle {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 100;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.arrow a {
+  text-decoration: none;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #161616;
+  border-radius: 50%;
+}
+
+.buttons-wsp {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons-wsp a {
+  text-decoration: none;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #3ebb44;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttons-wsp a:hover {
+  background-color: #16af2bb4;
+}
+
+/* Seccion Inicio */
+#inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/gatitos3.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+  margin-left: 3px;
+}
+
+header {
+  background-color: rgba(107, 107, 107, 0.137);
+  width: 100%;
+  transition: all 1s;
+}
+
+.contenido-header {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenido-header ul li a {
+  color: #fff;
+  margin: 0 12px;
+  font-size: 1em;
+  font-family: "Urbanist", sans-serif;
+  transition: 0.5s;
+}
+
+.contenido-header ul li a:hover {
+  color: #d685cb;
+}
+
+/* Seccion Sobre mi*/
+
+#sobremi {
+  padding: 3em;
+}
+
+h2 {
+  font-family: "Urbanist", sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  padding-bottom: 0.5em;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.sobremi {
+  margin-top: 1.2em;
+}
+
+.imagen {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*Seccion Productos*/
+
+/*Estilo de botones*/
+
+.button-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-card span {
+  position: relative;
+  z-index: 2;
+  transition: 0.4s ease all;
+}
+
+.button-card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #d685cb;
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  transition: 0.4s ease-in-out all;
+}
+
+.button-card:hover::after {
+  top: 0;
+}
+
+.seccion-productos {
+  background-color: #f6f1ed;
+  padding: 4em;
+}
+
+h4 {
+  padding: 1.2em;
+  font-size: 1.8em;
+  font-family: "Urbanist", sans-serif;
+}
+
+.precio {
+  font-weight: 700;
+}
+
+.bold {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.tarjetas-productos {
+  margin: 1%;
+  position: relative;
+}
+
+.card-text {
+  font-size: 0.9em;
+}
+
+.modal img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/*Cuidados*/
+.seccion-cuidados {
+  background-color: #fff;
+  padding: 4em;
+}
+
+.cuidados {
+  font-family: "Urbanist", sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  padding-bottom: 0.5em;
+  color: #000000;
+}
+
+.cuidados-p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #000000;
+}
+
+/*Contacto*/
+
+.wts {
+  color: #d685cb;
+  font-weight: 700;
+}
+
+.contact {
+  background-color: transparent;
+  padding: 3em;
+  margin-top: 5em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #d685cb;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
+.imagen-insta {
+  margin-bottom: 3em;
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+}
+
+.video-face {
+  width: 476px;
+  height: 476px;
+  margin-top: 1em;
+}
+
+/*Banner*/
+
+.banner {
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #f6f1ed;
+}
+
+.buttons-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons-footer a {
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  background: transparent;
+  color: #d685cb;
+}
+
+.footer-text {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #d685cb;
+  font-weight: 600;
+}
+
+.color-copy {
+  background-color: #d685cb;
+}
+
+.text-copy {
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*---------------MEDIA QUERIES------------------*/
+
+@media (max-width: 768px) {
+  #inicio {
+    width: 100%;
+    height: 45vh;
+  }
+
+  .banner {
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+  .banner-responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 428px) {
+  #inicio {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .seccion-productos {
+    padding: 2em;
+  }
+
+  h4 {
+    padding: 1.2em;
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .cuidados {
+    font-size: 36px;
+  }
+
+  .cuidados-p {
+    font-size: 1em;
+  }
+
+  .imagen {
+    padding: 2px;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .contact {
+    background-color: transparent;
+    padding: 1em;
+    margin-top: 5em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .banner {
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+  .banner-responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .buttons-footer a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
